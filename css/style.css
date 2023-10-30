@@ -4,6 +4,29 @@
     box-sizing: border-box;
 }
 
-body {
+ #site_header {
     background-color: red;
-}
+    height: 10vh;
+ }
+
+ .greed {
+    height: 85vh;
+    width: 20vw;
+    background-color: green;
+    display: inline-block;
+    margin: -10vh;
+ }
+
+ #site_main {
+    background-color: blue;
+    height: 75vh;
+    width: 85vw;
+    float: right;  
+ }
+
+ #site_footer {
+    background-color: yellow;
+    height: 24vh;
+    margin
+ }
+   
