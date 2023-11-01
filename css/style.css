@@ -1,43 +1,156 @@
+  /* Reset Rules */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+   --dark-grid: #000000;
+   --gray-home: #d2d2d2; 
+   --gray-word: #414141;
+   --white-playlist: #cacaca;
+   --gray-plus: #a3a3a3;
+   --gray-circle_user: #808080;
+   --white-name: #d4d4d4;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+}
+
+   /* Debug */
+
 .debug .grid {
-    background-color: green;
- }
+    background-color: #000000;
+}
 
- .grid {
-    height: 85vh;
-    width: 20vw;
-    position: fixed;
- }
-
- .debug #site_header {
+.debug #site_header {
    background-color: red;
 }
 
-#site_header {
-   height: 10vh;
+.debug #site_main {
+   background-color: blue;
 }
-
- .debug #site_main {
-    background-color: blue;
- }
-
- #site_main {
-    height: 75vh;
-    width: 80vw;
-    float: right;  
- }
 
 .debug #site_footer {
    background-color: orange;
 }
 
+   /* Utility */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+.pl-1 {
+   padding-left: 1rem;
+}
+
+.mt-0.5 {
+   margin-top: 0.5rem;
+}
+
+.mt-1 {
+   margin-top: 1rem;
+}
+
+li {
+   line-height: 2rem;
+}
+
+i {
+   font-size: 1rem;
+   margin-right: 0.25rem;
+}
+
+   /* End Region Utility */
+
+   /* Region Grid */
+
+.grid {
+   background-color: var(--dark-grid);
+    height: 90vh;
+    width: 12rem;
+    position: fixed;
+    font-size: 0.75rem;
+} 
+
+.logo img {
+   width: 8rem;
+   padding: 1rem 0 0 1rem;
+}
+
+.navigation_bar {
+   line-height: 2rem;
+   color: var(--gray-word);
+}
+
+.home a {
+   color: var(--gray-home);
+}
+
+.search a {
+   color: var(--gray-word);
+}
+
+.library a {
+   color: var(--gray-word);
+}
+
+.playlist h5 {
+   color: var(--white-playlist);
+}
+
+.plus {
+   background-color: var(--gray-plus);
+   padding: 0.5rem;
+   color: black;
+}
+
+.user {
+   position: absolute;
+   bottom: 0;
+   color: var(--gray-circle_user);
+}
+
+.download {
+   border-bottom: 1px solid gray;
+   padding: 0.5rem 0;
+}
+
+.download i {
+   font-size: 0.75rem;
+}
+
+.username {
+   padding: 0.5rem 0;
+}
+
+.username .name {
+   color: var(--white-name);
+}
+
+   /* End Region Grid */
+
+
+
+#site_header {
+   height: 10vh;
+}
+
+#site_main {
+    height: 80vh;
+    width: calc(100% - 12rem);
+    float: right;  
+}
+
 #site_footer {
-   height: 15vh;
+   height: 10vh;
    width: 100%;
    position: absolute;
    bottom: 0;
