@@ -13,6 +13,8 @@
    --gray-plus: #a3a3a3;
    --gray-circle_user: #808080;
    --white-name: #d4d4d4;
+   --dark-header: #080b12;
+   --white-upgrade: #dbdcdc;
 }
 
 body {
@@ -74,10 +76,10 @@ i {
 
 .grid {
    background-color: var(--dark-grid);
-    height: 90vh;
-    width: 12rem;
-    position: fixed;
-    font-size: 0.75rem;
+   height: 90vh;
+   width: 12rem;
+   position: fixed;
+   font-size: 0.75rem;
 } 
 
 .logo img {
@@ -137,10 +139,25 @@ i {
 
    /* End Region Grid */
 
-
+   /* Region Header */
 
 #site_header {
-   height: 10vh;
+   background-color: var(--dark-header);
+   height: 10vh; 
+}
+
+.upgrade {
+   position: absolute;
+   right: 0;
+   border: 2px solid #dbdcdc;
+   border-radius: 1rem;
+   margin-top: 0.75rem;
+   padding: 0.25rem 1rem;
+}
+
+.upgrade a {
+   color: var(--white-upgrade);
+   font-size: 0.5rem;
 }
 
 #site_main {
