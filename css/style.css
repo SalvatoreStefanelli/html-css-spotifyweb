@@ -87,6 +87,7 @@ i {
    width: 12rem;
    position: fixed;
    font-size: 0.75rem;
+   font-weight: bold;
 } 
 
 .logo img {
@@ -99,12 +100,24 @@ i {
    color: var(--gray-word);
 }
 
+.navigation_bar .home a img {
+   width: 1.5rem;
+}
+
 .home a {
    color: var(--gray-home);
 }
 
+.navigation_bar .search img {
+   width: 1.5rem;
+}
+
 .search a {
    color: var(--gray-word);
+}
+
+.navigation_bar .library img {
+   width: 1.5rem;
 }
 
 .library a {
@@ -130,14 +143,21 @@ i {
 .download {
    border-bottom: 1px solid gray;
    padding: 0.5rem 0;
+   font-size: 10px; 
 }
 
-.download i {
-   font-size: 0.75rem;
+.download img {
+   width: 0.75rem;
 }
 
 .username {
    padding: 0.5rem 0;
+}
+
+.username img {
+   width: 1rem;
+   background-color: var(--gray-circle_user);
+   border-radius: 50%;
 }
 
 .username .name {
@@ -150,12 +170,13 @@ i {
 
 #site_header {
    background-color: var(--dark-header);
-   height: 10vh; 
+   height: 10vh;  
 }
 
 .upgrade {
    position: absolute;
    right: 0;
+   top: 5px;
    border: 2px solid #dbdcdc;
    border-radius: 1rem;
    margin-top: 0.75rem;
@@ -165,6 +186,7 @@ i {
 .upgrade a {
    color: var(--white-upgrade);
    font-size: 0.5rem;
+   font-weight: bold;
 }
 
    /* End Region Header */
@@ -186,6 +208,7 @@ i {
 
 .menu ul li {
    font-size: 0.75rem;
+   font-weight: bold;
    padding-right: 1rem;
    }
 
@@ -234,6 +257,18 @@ i {
    color: var(--gray-menu);
    font-size: 8px;
    font-weight: bold;
+}
+
+.card .circle-play {
+   position: relative;
+}
+
+.circle-play i{
+   color: var(--white-main);
+   font-size: 50px;
+   position: absolute;
+   bottom: 2.5rem;
+   left: 2.5rem;   
 }
 
 .col-12 section p {
