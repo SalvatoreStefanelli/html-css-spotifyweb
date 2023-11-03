@@ -15,6 +15,9 @@
    --white-name: #d4d4d4;
    --dark-header: #080b12;
    --white-upgrade: #dbdcdc;
+   --dark-main: #141922;
+   --gray-menu: #515459;
+   --white-main: #ffffff;
 }
 
 body {
@@ -68,6 +71,10 @@ li {
 i {
    font-size: 1rem;
    margin-right: 0.25rem;
+}
+
+.d-flex {
+   display: flex;
 }
 
    /* End Region Utility */
@@ -160,11 +167,87 @@ i {
    font-size: 0.5rem;
 }
 
+   /* End Region Header */
+
+   /* Region Main */
+
 #site_main {
+   background-color: var(--dark-main) ;
     height: 80vh;
     width: calc(100% - 12rem);
     float: right;  
+    overflow-y: scroll;
 }
+
+.menu ul {
+   display: flex;
+   justify-content: center;
+}
+
+.menu ul li {
+   font-size: 0.75rem;
+   padding-right: 1rem;
+   }
+
+.menu ul li a{
+   color: var(--gray-menu);
+}
+
+.col-12 section h3 {
+   margin-top: 1.5rem;
+   color: var(--white-main);
+   padding: 0.25rem 1rem;
+}
+
+.album {
+   padding: 1rem;
+   gap: 1rem;
+}
+
+.created_for_you {
+   padding: 1rem;
+   gap: 1rem;
+}
+
+.artists {
+   padding: 1rem;
+   gap: 1rem;
+}
+
+.card {
+   width: calc(100% / 6);
+   aspect-ratio: 1 / 1;
+}
+
+.card img {
+   width: 100%;
+}
+
+.card h6 {
+   text-align: center;
+   color: var(--white-main);
+   padding: 0.5rem 0;
+}
+
+.card p {
+   text-align: center;
+   color: var(--gray-menu);
+   font-size: 8px;
+   font-weight: bold;
+}
+
+.col-12 section p {
+   color: var(--gray-menu);
+   padding: 0.25rem 1rem;
+   font-size: 8px;
+   font-weight: bold;
+}
+
+.artists .card img {
+   border-radius: 50%;
+}
+
+   /* End Region Main */
 
 #site_footer {
    height: 10vh;
