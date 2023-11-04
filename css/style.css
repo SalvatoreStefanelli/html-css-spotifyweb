@@ -18,6 +18,8 @@
    --dark-main: #141922;
    --gray-menu: #515459;
    --white-main: #ffffff;
+   --dark-footer: #282828;
+   --gray-word-footer: #646464;
 }
 
 body {
@@ -284,10 +286,91 @@ i {
 
    /* End Region Main */
 
+   /* Region Footer */
+
 #site_footer {
+   background-color: var(--dark-footer);
    height: 10vh;
    width: 100%;
    position: absolute;
    bottom: 0;
 }
+
+.music_player {
+   justify-content: space-between;
+}
+
+.song {
+   position: relative;
+   width: 120px;
+}
+
+.song img {
+   width: 3.75rem;
+   padding: 0.5rem;
+}
+
+.song h6 {
+   color: var(--white-main);
+   display: inline-block;
+   position: absolute;
+   top: 20px;
+}
+
+.song p {
+   color: var(--gray-word-footer);
+   font-size: 8px;
+   font-weight: bold;
+   display: inline-block;
+   position: absolute;
+   top: 35px;
+}
+
+.like {
+   width: 60px;
+   align-self: center;
+}
+
+.like a {
+   color: var(--gray-word);
+}
+
+.time {
+   width: 5px;
+   color: var(--white-main);
+   font-size: 0.5rem;
+   align-self: center;
+}
+
+.time-song {
+   width: 350px;
+}
+
+.time-song-button {
+   justify-content: center;
+   gap: 1rem;
+   border-bottom: 5px solid var(--gray-word-footer);
+   padding: 0.5rem;
+}
+
+.time-song a {
+   color: var(--white-main);
+}
+
+.volume {
+   width: 150px;
+   color: var(--white-main);
+}
+
+.volume-icons {
+   align-self: center;
+}
+
+.border {
+   width: 60px;
+   margin-left: 0.5rem;
+   border: 2px solid gray;
+   align-self: center;
+}
+/* End Region Footer */
    
