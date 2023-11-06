@@ -20,6 +20,7 @@
    --white-main: #ffffff;
    --dark-footer: #282828;
    --gray-word-footer: #646464;
+   --green-underline: #8cc92c;
 }
 
 body {
@@ -102,6 +103,22 @@ i {
    color: var(--gray-word);
 }
 
+.home a:hover {
+   color: white;
+}
+
+.search a:hover {
+   color: white;
+}
+
+.library a:hover {
+   color: white;
+}
+
+.playlist:hover {
+   color: white;
+}
+
 .navigation_bar .home a img {
    width: 1.5rem;
 }
@@ -148,6 +165,10 @@ i {
    font-size: 10px; 
 }
 
+.download:hover, .username .name:hover {
+   color: white;
+}
+
 .download img {
    width: 0.75rem;
 }
@@ -191,6 +212,10 @@ i {
    font-weight: bold;
 }
 
+.upgrade a:hover {
+   padding: 0.5rem 1.25rem;
+}
+
    /* End Region Header */
 
    /* Region Main */
@@ -208,6 +233,10 @@ i {
    justify-content: center;
 }
 
+.menu ul .green {
+   border-bottom: 2px solid var(--green-underline);
+}
+
 .menu ul li {
    font-size: 0.75rem;
    font-weight: bold;
@@ -216,6 +245,10 @@ i {
 
 .menu ul li a{
    color: var(--gray-menu);
+}
+
+.menu ul li a:hover {
+   color: white;
 }
 
 .col-12 section h3 {
@@ -269,8 +302,13 @@ i {
    color: var(--white-main);
    font-size: 50px;
    position: absolute;
-   bottom: 2.5rem;
-   left: 2.5rem;   
+   bottom: 4rem;
+   left: 4rem;
+   opacity: 0;
+}
+
+.card .circle-play:hover {
+   opacity: 1;
 }
 
 .col-12 section p {
@@ -307,7 +345,7 @@ i {
 
 .song img {
    width: 3.75rem;
-   padding: 0.5rem;
+   padding: 0.25rem;
 }
 
 .song h6 {
@@ -373,4 +411,36 @@ i {
    align-self: center;
 }
 /* End Region Footer */
-   
+
+
+@media screen and (max-width: 768px) {
+   .album {
+      flex-wrap: wrap;
+   }
+}
+
+
+@media screen and (max-width: 768px) {
+   .menu ul {
+      flex-wrap: wrap;
+   }
+}
+ 
+@media  screen and (max-width: 480px) {
+   .card{
+      width: calc(100% / 3);
+      aspect-ratio: 1 /1;
+   }
+}
+
+@media screen and (max-height: 580px) {
+   .user, .username {
+      display: none;
+   }
+}
+
+
+
+
+
+    
